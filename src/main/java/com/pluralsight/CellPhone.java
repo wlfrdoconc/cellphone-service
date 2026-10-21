@@ -60,5 +60,11 @@ public class CellPhone {
     public void setOwner(String owner) {
         this.owner = owner;
     }
+
+    // Add a dial(String phoneNumber) method
+    public void dial(String phoneNumber) {
+        System.out.println(owner + "'s phone is calling " + phoneNumber);
+    }
+
 }
 

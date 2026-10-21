@@ -66,5 +66,19 @@ public class CellPhone {
         System.out.println(owner + "'s phone is calling " + phoneNumber);
     }
 
+    // Overloaded CellPhone() method with 5 input parameters
+    public CellPhone(int serialNumber, String model, String carrier, String phoneNumber, String owner) {
+        this.serialNumber = serialNumber;
+        this.model = model;
+        this.carrier = carrier;
+        this.phoneNumber = phoneNumber;
+        this.owner = owner;
+    }
+
+    // BONUS - Overloaded dial() method
+    public void dial(CellPhone phone3) {
+        dial(phone3.getPhoneNumber());
+    }
+
 }
 

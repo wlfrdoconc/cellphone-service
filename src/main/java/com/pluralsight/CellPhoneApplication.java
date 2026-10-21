@@ -80,7 +80,13 @@ public class CellPhoneApplication {
         // Phone 2 calls Phone 1
         phone2.dial(phone1.getPhoneNumber());
 
-        read.close();
+        // New phone object
+        CellPhone phone3 = new CellPhone(123456, "Oppo Find X9 Pro", "Mint", "408-582-3305", "Ronell");
+        display(phone3);
+        // Phone 3 calls Phone 1 using the original method
+        phone3.dial(phone1.getPhoneNumber());
+        // Phone 1 calls Phone 3 using the overloaded method
+        phone1.dial(phone3);
 
         read.close();
     }
